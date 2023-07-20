@@ -1,0 +1,143 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  height: 50px;
+  /* border-bottom: 1px solid themed("border"); */
+  border-bottom: 1px solid gray;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+  position: sticky;
+  top: 0;
+  background-color: themed("bg");
+  color: themed("textColor");
+  z-index: 999;
+  background-color: white;
+}
+
+.navbar .left {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  cursor: pointer;
+}
+
+.navbar .left span {
+  font-weight: bold;
+  font-size: 30px;
+  color: themed("logo");
+}
+.left-icons {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  cursor: pointer;
+}
+
+.navbar .left .search {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid black;
+  outline: none;
+  border: 1px solid themed("border");
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.navbar .left .search input {
+  border: none;
+  width: 500px;
+  outline: none;
+  /* font-weight: bold; */
+  font-size: large;
+  background-color: transparent;
+  color: themed("textColor");
+}
+
+/* @media (max-width:  Mobile breakpoint ) {
+  .navbar .left .search input {
+    display: none;
+  }
+}
+
+@media (max-width: /* Tablet breakpoint ) {
+  .navbar .left .search input {
+    width: 200px;
+  }
+} */
+
+.navbar .right {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  gap: 20px;
+}
+
+/* @media (max-width: Mobile breakpoint ) {
+  .navbar .right {
+    display: none;
+  }
+} */
+.btn {
+  padding: 10px;
+  width: 60px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+  background-color: #5271ff;
+  color: white;
+}
+
+.navbar .right .user {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 500;
+}
+
+/* @media (max-width:  Tablet breakpoint ) {
+  .navbar .right .user {
+    display: none;
+  }
+} */
+
+.navbar .right .user img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+@media (max-width: 768px) {
+  .navbar .left span {
+    font-size: 24px;
+  }
+
+  .navbar .left .search input {
+    width: 300px;
+  }
+
+  .navbar .right .user {
+    gap: 5px;
+    font-weight: 400;
+  }
+
+  .navbar .right .user img {
+    width: 25px;
+    height: 25px;
+  }
+}
+
+.darkmode {
+  background-color: black;
+  color: white;
+  transition: background-color 0.25s ease-in-out;
+}
+.lightMode {
+  background-color: white;
+  /* color: white; */
+  transition: background-color 0.25s ease-in-out;
+}
+button .btn {
+  cursor: pointer;
+}

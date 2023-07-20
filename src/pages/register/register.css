@@ -1,0 +1,129 @@
+/* Default styles */
+.register {
+  height: 100vh;
+  background-color: rgb(154, 138, 255);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.register .card {
+  width: 50%;
+  display: flex;
+  flex-direction: row-reverse;
+  background-color: white;
+  border-radius: 10px;
+  min-height: 600px;
+  overflow: hidden;
+}
+
+.register .card .left {
+  flex: 1;
+  background: linear-gradient(rgba(39, 11, 96, 0.5), rgba(39, 11, 96, 0.5)),
+    url("https://media.istockphoto.com/id/1146311489/photo/register-button-on-computer-keyboard.webp?b=1&s=170667a&w=0&k=20&c=mVenn0YymPS3j0hbyXGKLkLhOUY_vSbBUn5igimKhVo=")
+      center;
+  background-size: cover;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  color: white;
+}
+
+.register .card .left h1 {
+  font-size: 60px;
+  line-height: 60px;
+}
+
+.register .card .left span {
+  font-size: 14px;
+}
+
+.register .card .left button {
+  width: 50%;
+  padding: 10px;
+  border: none;
+  background-color: white;
+  color: rebeccapurple;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.register .card .right {
+  flex: 1;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  justify-content: center;
+}
+.register .card .left {
+  min-width: 30%;
+}
+.register .card .right h1 {
+  color: #555;
+  /* font-size: 10px; */
+}
+
+.register .card .right form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.register .card .right form input {
+  border: none;
+  border-bottom: 1px solid lightgray;
+  padding: 20px 10px;
+}
+
+.register .card .right form button {
+  width: 50%;
+  padding: 10px;
+  border: none;
+  background-color: #938eef;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Responsive styles */
+@media (max-width: 1024px) {
+  .register .card {
+    width: 70%;
+  }
+}
+
+@media (max-width: 768px) {
+  .register .card {
+    flex-direction: column;
+    width: 80%;
+    min-height: auto;
+  }
+
+  .register .card .left,
+  .register .card .right {
+    padding: 30px;
+  }
+
+  .register .card .left h1 {
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .register .card .left button,
+  .register .card .right form button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .register .card {
+    width: 90%;
+  }
+
+  .register .card .left h1 {
+    font-size: 40px;
+    line-height: 40px;
+  }
+}

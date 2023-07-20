@@ -1,0 +1,86 @@
+.login {
+  height: 100vh;
+  background-color: rgb(193, 190, 255);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login .card {
+  width: 50%;
+  display: flex;
+  background-color: white;
+  border-radius: 10px;
+  min-height: 600px;
+  min-width: 720px;
+  /* background-attachment: fixed; */
+  overflow: hidden;
+}
+
+.login .card .left {
+  flex: 1;
+  background: linear-gradient(rgba(39, 11, 96, 0.5), rgba(39, 11, 96, 0.5)),
+    url("https://images.unsplash.com/photo-1525770041010-2a1233dd8152?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHNvY2lhbCUyMG1lZGlhfGVufDB8fDB8fHwy&auto=format&fit=crop&w=600&q=60")
+      center;
+  background-size: cover;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  color: white;
+}
+
+.login .card .left h1 {
+  font-size: 80px;
+  flex-wrap: wrap;
+  line-height: 80px;
+}
+
+.login .card .left span {
+  font-size: 14px;
+}
+
+.login .card .left button {
+  width: 50%;
+  padding: 10px;
+  border: none;
+  background-color: white;
+  color: rebeccapurple;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.login .card .right {
+  flex: 1;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  justify-content: center;
+}
+
+.login .card .right h1 {
+  color: #555;
+}
+
+.login .card .right form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.login .card .right form input {
+  border: none;
+  border-bottom: 1px solid lightgray;
+  padding: 20px 10px;
+}
+
+.login .card .right form button {
+  width: 50%;
+  padding: 10px;
+  border: none;
+  background-color: #938eef;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}

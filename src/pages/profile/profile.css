@@ -1,0 +1,144 @@
+/* @import "../../style.scss"; */
+
+/* .profile */
+.profile {
+  background-color: themed("bgSoft");
+}
+
+/* .profile .images */
+.profile .images {
+  width: 100%;
+  height: 300px;
+  position: relative;
+}
+
+/* .profile .images .cover */
+.profile .images .cover {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* .profile .images .profilePic */
+.profile .images .profilePic {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 200px;
+}
+
+/* .profile .profileContainer */
+.profile .profileContainer {
+  padding: 20px 70px;
+}
+
+/* .profile .profileContainer.mobile */
+.profile .profileContainer.mobile {
+  padding: 10px;
+}
+
+/* .profile .profileContainer.tablet */
+.profile .profileContainer.tablet {
+  padding: 20px;
+}
+
+/* .profile .profileContainer .uInfo */
+.profile .profileContainer .uInfo {
+  height: 180px;
+  -webkit-box-shadow: 0px 0px 25px -10px rgba(0, 0, 0, 0.38);
+  -moz-box-shadow: 0px 0px 25px -10px rgba(0, 0, 0, 0.38);
+  box-shadow: 0px 0px 25px -10px rgba(0, 0, 0, 0.38);
+  border-radius: 20px;
+  background-color: themed("bg");
+  color: themed("textColor");
+  padding: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+/* .profile .profileContainer.mobile .uInfo */
+.profile .profileContainer.mobile .uInfo {
+  flex-direction: column;
+  height: 30vh;
+  padding: 20px;
+  margin-top: 100px;
+}
+
+/* .profile .profileContainer .uInfo .left */
+.profile .profileContainer .uInfo .left {
+  flex: 1;
+  display: flex;
+  gap: 10px;
+}
+
+/* .profile .profileContainer.tablet .uInfo .left */
+.profile .profileContainer.tablet .uInfo .left {
+  flex-wrap: wrap;
+}
+
+/* .profile .profileContainer .uInfo .left a */
+.profile .profileContainer .uInfo .left a {
+  color: themed("textColorSoft");
+}
+
+/* .profile .profileContainer .uInfo .center */
+.profile .profileContainer .uInfo .center {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+/* .profile .profileContainer .uInfo .center span */
+.profile .profileContainer .uInfo .center span {
+  font-size: 30px;
+  font-weight: 500;
+}
+
+/* .profile .profileContainer .uInfo .center .info */
+.profile .profileContainer .uInfo .center .info {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+/* .profile .profileContainer .uInfo .center .info .item */
+.profile .profileContainer .uInfo .center .info .item {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: themed("textColorSoft");
+}
+
+/* .profile .profileContainer .uInfo .center .info .item span */
+.profile .profileContainer .uInfo .center .info .item span {
+  font-size: 12px;
+}
+
+/* .profile .profileContainer .uInfo .center button */
+.profile .profileContainer .uInfo .center button {
+  border: none;
+  background-color: #5271ff;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* .profile .profileContainer .uInfo .right */
+.profile .profileContainer .uInfo .right {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+}
